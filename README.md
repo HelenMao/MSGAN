@@ -35,9 +35,9 @@ If you find MSGAN useful in your research, please consider citing:
 git clone https://github.com/HelenMao/MSGAN.git
 ```
 ## Training Examples
-create datasets folder and download datasets into it
+create datasets folder and download coressponding datasets into it
 ```
-./datasets/
+mkdir datasets
 ```
 ### Conditoned on Label
 - Dataset: [CIFAR10](https://www.cs.toronto.edu/~kriz/cifar.html) 
