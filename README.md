@@ -34,19 +34,22 @@ git clone https://github.com/HelenMao/MSGAN.git
 ```
 ## Training Examples
 ### Conditoned on Label
--Dataset:CIFAR10
--Baseline: DCGAN
+- Dataset:CIFAR10
+- Baseline: DCGAN
 ```
 cd MSGAN/DCGAN-Mode-Seeking
 python train.py
 ```
 ### Conditioned on Image
--Paired Data: facades and maps
--Baseline: Pix2Pix
-You can download the facades and maps datasets into folder './datasets/' in the BicycleGAN[Github Project](https://github.com/junyanz/BicycleGAN)
+- Paired Data: facades and maps
+- Baseline: Pix2Pix
+You can download the facades and maps datasets from the BicycleGAN[[Github Project]](https://github.com/junyanz/BicycleGAN) into folder
+```
+./datasets
+```
 We employ the generator and discriminator architectures of the BicycleGAN and follow the training process of Pix2Pix.
 ```
 cd MSGAN/Pix2Pix-Mode-Seeking
 python train.py --dataroot=./datasets/facades
 ```
--Unpaired Data: Yosemite (summer <-> winter) and Cat2Dog (cat <-> dog)
+- Unpaired Data: Yosemite (summer <-> winter) and Cat2Dog (cat <-> dog)
