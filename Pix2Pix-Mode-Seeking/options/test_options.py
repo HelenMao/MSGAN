@@ -4,7 +4,7 @@ from .base_options import BaseOptions
 class TestOptions(BaseOptions):
     def initialize(self, parser):
         BaseOptions.initialize(self, parser)
-        parser.add_argument('--results_dir', type=str, default='../results/', help='saves results here.')
+        parser.add_argument('--results_dir', type=str, default='./results/', help='saves results here.')
         parser.add_argument('--phase', type=str, default='val', help='train, val, test, etc')
         parser.add_argument('--num_test', type=int, default=50, help='how many test images to run')
         parser.add_argument('--n_samples', type=int, default=5, help='#samples')
