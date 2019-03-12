@@ -35,21 +35,22 @@ If you find MSGAN useful in your research, please consider citing:
 git clone https://github.com/HelenMao/MSGAN.git
 ```
 ## Training Examples
+create datasets folder and download datasets into it
+```
+./datasets/
+```
 ### Conditoned on Label
-- Dataset: CIFAR10
+- Dataset: [CIFAR10](https://www.cs.toronto.edu/~kriz/cifar.html) 
 - Baseline: DCGAN
 ```
 cd MSGAN/DCGAN-Mode-Seeking
-python train.py
+python train.py --dataroot=./datasets/CIFAR10
 ```
 ### Conditioned on Image
 - Paired Data: facades and maps
 - Baseline: Pix2Pix <br>
 
-You can download the facades and maps datasets from the BicycleGAN [[Github Project]](https://github.com/junyanz/BicycleGAN) into folder
-```
-./datasets/
-```
+You can download the facades and maps datasets from the BicycleGAN [[Github Project]](https://github.com/junyanz/BicycleGAN) 
 We employ the generator and discriminator architectures of the BicycleGAN and follow the training process of Pix2Pix.
 ```
 cd MSGAN/Pix2Pix-Mode-Seeking
