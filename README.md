@@ -11,7 +11,7 @@ Contact: Qi Mao (qimao@pku.edu.cn), Hsin-Ying Lee (hlee246@ucmerced.edu), and Hu
 Mode Seeking Generative Adversarial Networks for Diverse Image Synthesis<br>
 [Qi Mao](https://sites.google.com/view/qi-mao/)\*, [Hsin-Ying Lee](http://vllab.ucmerced.edu/hylee/)\*, [Hung-Yu Tseng](https://sites.google.com/site/hytseng0509/)\*, [Siwei Ma](https://scholar.google.com/citations?user=y3YqlaUAAAAJ&hl=zh-CN), and [Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/)<br>
 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019 (* equal contribution)
-
+[arxiv]()
 ## Citing MSGAN
 If you find MSGAN useful in your research, please consider citing:
 ```
@@ -51,7 +51,7 @@ python train.py --dataroot ./datasets/Cifar10
 - Paired Data: facades and maps
 - Baseline: Pix2Pix <br>
 
-You can download the facades and maps datasets from the BicycleGAN [[Github Project]](https://github.com/junyanz/BicycleGAN) 
+You can download the facades and maps datasets from the BicycleGAN [[Github Project]](https://github.com/junyanz/BicycleGAN) <br>
 We employ the generator and discriminator architectures of the BicycleGAN and follow the training process of Pix2Pix.
 ```
 cd MSGAN/Pix2Pix-Mode-Seeking
@@ -86,12 +86,26 @@ Download and save them into
 ```
 
 ## Evaluation
-For [Pix2Pix](https://github.com/junyanz/BicycleGAN), [DRIT](https://github.com/HsinYingLee/DRIT), [StackGAN++](https://github.com/hanzhanggit/StackGAN-v2), please follow the instructions of corresponding github projects of the baseline frameworks for evaluation details.
+For [Pix2Pix](https://github.com/junyanz/BicycleGAN), [DRIT](https://github.com/HsinYingLee/DRIT), [StackGAN++](https://github.com/hanzhanggit/StackGAN-v2), please follow the instructions of corresponding github projects of the baseline frameworks for evaluation details. <br>
 **DCGAN-Mode-Seeking** <br>
 ```
 python test.py --dataroot ./datasets/Cifar10 --resume ./models/DCGAN-Mode-Seeking/00199.pth
 ```
-
+**Pix2Pix-Mode-Seeking** <br>
+```
+python test.py --dataroot ./datasets/facades --checkpoints_dir ./models/Pix2Pix-Mode-Seeking/facades --epoch 400
+```
+**DRIT-Mode-Seeking** <br>
+```
+python test.py --dataroot ./datasets/yosemite --resume ./models/DRIT-Mode-Seeking/yosemite/01200.pth --concat 1
+```
+```
+python test.py --dataroot ./datasets/cat2dog --resume ./models/DRIT-Mode-Seeking/cat2dog/01999.pth --concat 0
+```
+**StackGAN++-Mode-Seeking** <br>
+```
+python main.py --cfg cfg/eval_birds.yml 
+```
 
 ## Reference
 - DCGAN [[Paper]](https://arxiv.org/abs/1511.06434)
