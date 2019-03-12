@@ -12,7 +12,7 @@ IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019 (* equal
 
 Please cite our paper if you find the code or dataset useful for your research.
 ```
-@inproceedings{DRIT,
+@inproceedings{MSGAN,
   author = {Mao, Qi, Lee, Hsin-Ying and Tseng, Hung-Yu and Ma, Siwei, and Yang, Ming-Hsuan},
   booktitle = {IEEE Conference on Computer Vision and Pattern Recognition},
   title = {Mode Seeking Generative Adversarial Networks for Diverse Image Synthesis},
