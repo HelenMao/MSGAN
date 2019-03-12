@@ -80,9 +80,9 @@ python main.py --cfg cfg/birds_3stages.yml
 ```
 ## Pre-trained Models
 - [DCGAN-Mode-Seeking](https://drive.google.com/open?id=1eWq1nD-zJVEerru-_X5Ztpb8YbcYo7Px) 
-- [Pix2Pix-Mode-Seeking for facades and maps]
-- DRIT-Mode-Seeking for Yosemite and Cat2dog
-- StackGAN++-Mode-Seeking
+- [Pix2Pix-Mode-Seeking for facades and maps](https://drive.google.com/open?id=1ZXnh090MFMrw8iSMjk5zvqXYY_nMmCoU)
+- [DRIT-Mode-Seeking for Yosemite and Cat2dog](https://drive.google.com/open?id=1jLZHhWjxz_JyszU1_hj39l3_8zU9Hfkw)
+- [StackGAN++-Mode-Seeking](https://drive.google.com/open?id=1tnDDolN-OMLG4BUNB6rPIjSXoP2FbXgw)
 
 Download and save them into 
 ```
