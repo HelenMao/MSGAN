@@ -1,5 +1,5 @@
 
-<img src='imgs/teaser.png' width="800px">
+<img src='imgs/teaser.png' width="900px">
 
 # Mode Seeking Generative Adversarial Networks for Diverse Image Synthesis
 
@@ -22,6 +22,8 @@ If you find MSGAN useful in your research, please consider citing:
   year = {2019}
 }
 ```
+## Example Results
+<img src='imgs/DRIT.png' width="900px">
 ## Usage
 
 ### Prerequisites
@@ -86,7 +88,7 @@ Download and save them into
 ```
 
 ## Evaluation
-For [Pix2Pix](https://github.com/junyanz/BicycleGAN), [DRIT](https://github.com/HsinYingLee/DRIT), [StackGAN++](https://github.com/hanzhanggit/StackGAN-v2), please follow the instructions of corresponding github projects of the baseline frameworks for evaluation details. <br>
+For [Pix2Pix](https://github.com/junyanz/BicycleGAN), [DRIT](https://github.com/HsinYingLee/DRIT), [StackGAN++](https://github.com/hanzhanggit/StackGAN-v2), please follow the instructions of corresponding github projects of the baseline frameworks for more evaluation details. <br>
 ### Testing Examples
 **DCGAN-Mode-Seeking** <br>
 ```
