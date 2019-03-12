@@ -45,7 +45,7 @@ create datasets folder and download coressponding datasets into it
 mkdir datasets
 ```
 ### Conditoned on Label
-- Dataset: [CIFAR10](https://www.cs.toronto.edu/~kriz/cifar.html) 
+- Dataset: [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html) 
 - Baseline: DCGAN
 ```
 cd MSGAN/DCGAN-Mode-Seeking
