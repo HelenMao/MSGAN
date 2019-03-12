@@ -1,5 +1,5 @@
 
-<img src='./imgs/teaser.png', width="800px">
+<img src='imgs/teaser.png', width="800px">
 # Mode Seeking Generative Adversarial Networks for Diverse Image Synthesis
 
 Pytorch implementation for our MSGAN (**Miss-GAN**). We propose a simple yet effective mode seeking regularization term that can be applied to **arbitrary** conditional generative adversarial networks in different tasks to alleviate the mode collapse issue and improve the **diversity**.
