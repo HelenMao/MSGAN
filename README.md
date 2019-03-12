@@ -42,8 +42,8 @@ python train.py
 ```
 ### Conditioned on Image
 - Paired Data: facades and maps
-- Baseline: Pix2Pix
-<br>
+- Baseline: Pix2Pix <br>
+
 You can download the facades and maps datasets from the BicycleGAN [[Github Project]](https://github.com/junyanz/BicycleGAN) into folder
 ```
 ./datasets
@@ -54,8 +54,8 @@ cd MSGAN/Pix2Pix-Mode-Seeking
 python train.py --dataroot=./datasets/facades
 ```
 - Unpaired Data: Yosemite (summer <-> winter) and Cat2Dog (cat <-> dog)
-- Baseline: DRIT
-<br>
+- Baseline: DRIT <br>
+
 You can download the datasets from the DRIT [[Github Project]](https://github.com/HsinYingLee/DRIT)
 ```
 cd MSGAN/DRIT-Mode-Seeking
