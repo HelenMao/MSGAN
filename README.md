@@ -40,7 +40,7 @@ If you find MSGAN useful in your research, please consider citing:
 git clone https://github.com/HelenMao/MSGAN.git
 ```
 ## Training Examples
-create datasets folder and download coressponding datasets into it
+Download datasets for each task into the dataset folder
 ```
 mkdir datasets
 ```
@@ -90,7 +90,7 @@ Download and save them into
 ```
 
 ## Evaluation
-For [Pix2Pix](https://github.com/junyanz/BicycleGAN), [DRIT](https://github.com/HsinYingLee/DRIT), [StackGAN++](https://github.com/hanzhanggit/StackGAN-v2), please follow the instructions of corresponding github projects of the baseline frameworks for more evaluation details. <br>
+For [Pix2Pix](https://github.com/junyanz/BicycleGAN), [DRIT](https://github.com/HsinYingLee/DRIT), and [StackGAN++](https://github.com/hanzhanggit/StackGAN-v2), please follow the instructions of corresponding github projects of the baseline frameworks for more evaluation details. <br>
 ### Testing Examples
 **DCGAN-Mode-Seeking** <br>
 ```
