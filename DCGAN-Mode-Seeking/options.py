@@ -47,8 +47,8 @@ class TestOptions(BaseOptions):
 
         # ouptput related
         self.parser.add_argument('--num', type=int, default=5, help='number of outputs per image')
-        self.parser.add_argument('--name', type=str, default='trial', help='folder name to save outputs')
-        self.parser.add_argument('--result_dir', type=str, default='outputs', help='path for saving result images and models')
+        self.parser.add_argument('--name', type=str, default='CIFAR10', help='folder name to save outputs')
+        self.parser.add_argument('--result_dir', type=str, default='./results', help='path for saving result images and models')
 
         # model related
         self.parser.add_argument('--resume', type=str, required=True, help='specified the dir of saved models for resume the training')

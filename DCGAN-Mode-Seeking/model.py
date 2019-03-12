@@ -134,6 +134,6 @@ class CDCGAN(nn.Module):
 
     def test_forward(self, label):
         label_one_hot = self.onehot_encoding(label)
-        z_random = self.get_z_random(label.size(0), self.nz, 'gauss')
+        z_random = self.get_z_random(label.size(0), self.nz)
         outputs = self.G.forward(z_random, label_one_hot)
         return  outputs

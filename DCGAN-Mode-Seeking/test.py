@@ -34,7 +34,7 @@ def main():
     # directory
     result_dir = os.path.join(opts.result_dir, opts.name)
     if not os.path.exists(result_dir):
-        os.mkdir(result_dir)
+        os.makedirs(result_dir)
 
     # test
     print('\n--- testing ---')
@@ -50,13 +50,13 @@ def main():
         # img_name='img_{}'.format(test_class_images[label_id])
         # save_img(img1, img_name, os.path.join(os.path.join(opts.dataroot,'test'), '{}'.format(label_names[label_id])))
 
-    for idx2 in range(opts.num):
-        generate_class_images[label_id] += 1
-        with torch.no_grad():
-            img = model.test_forward(label)
-        imgs.append(img)
-        names.append('img_{}'.format(generate_class_images[label_id]))
-    save_imgs(imgs, names, os.path.join(result_dir, '{}'.format(label_names[label_id])))
+        for idx2 in range(opts.num):
+            generate_class_images[label_id] += 1
+            with torch.no_grad():
+                img = model.test_forward(label)
+            imgs.append(img)
+            names.append('img_{}'.format(generate_class_images[label_id]))
+        save_imgs(imgs, names, os.path.join(result_dir, '{}'.format(label_names[label_id])))
     return
 
 if __name__ == '__main__':
