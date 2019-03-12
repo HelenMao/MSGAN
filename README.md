@@ -72,7 +72,7 @@ You can download the datasets from the StackGAN++ [[Github Project]](https://git
 cd MSGAN/StackGAN++-Mode-Seeking
 python main.py --cfg cfg/birds_3stages.yml
 ```
-### Pre-trained Models
+## Pre-trained Models
 - DCGAN-Mode-Seeking 
 - Pix2Pix-Mode-Seeking for facades and maps
 - DRIT-Mode-Seeking for Yosemite and Cat2dog
@@ -83,10 +83,10 @@ Download and save it to
 ./models/
 ```
 
-### Evaluation
+## Evaluation
 Following the instructions of baseline frameworks for evaluation.
 
-### Reference
+## Reference
 - Pix2Pix and BicycleGAN [[Github Project]](https://github.com/junyanz/BicycleGAN) 
 - DRIT [[Github Project]](https://github.com/HsinYingLee/DRIT)
 - StackGAN++ [[Github Project]](https://github.com/hanzhanggit/StackGAN-v2)
