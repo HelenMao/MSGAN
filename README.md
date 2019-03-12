@@ -1,5 +1,6 @@
 
 <img src='imgs/teaser.png', width="800px">
+
 # Mode Seeking Generative Adversarial Networks for Diverse Image Synthesis
 
 Pytorch implementation for our MSGAN (**Miss-GAN**). We propose a simple yet effective mode seeking regularization term that can be applied to **arbitrary** conditional generative adversarial networks in different tasks to alleviate the mode collapse issue and improve the **diversity**.
@@ -15,7 +16,7 @@ IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019 (* equal
 If you find MSGAN useful in your research, please consider citing:
 ```
 @inproceedings{MSGAN,
-  author = {Mao, Qi, and Lee, Hsin-Ying and Tseng, Hung-Yu and Ma, Siwei, and Yang, Ming-Hsuan},
+  author = {Mao, Qi and Lee, Hsin-Ying and Tseng, Hung-Yu and Ma, Siwei and Yang, Ming-Hsuan},
   booktitle = {IEEE Conference on Computer Vision and Pattern Recognition},
   title = {Mode Seeking Generative Adversarial Networks for Diverse Image Synthesis},
   year = {2019}
