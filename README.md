@@ -100,6 +100,9 @@ python test.py --dataroot ./datasets/Cifar10 --resume ./models/DCGAN-Mode-Seekin
 ```
 python test.py --dataroot ./datasets/facades --checkpoints_dir ./models/Pix2Pix-Mode-Seeking/facades --epoch 400
 ```
+```
+python test.py --dataroot ./datasets/maps --checkpoints_dir ./models/Pix2Pix-Mode-Seeking/maps --epoch 400
+```
 **DRIT-Mode-Seeking** <br>
 ```
 python test.py --dataroot ./datasets/yosemite --resume ./models/DRIT-Mode-Seeking/yosemite/01200.pth --concat 1
