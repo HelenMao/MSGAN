@@ -11,7 +11,8 @@ Mode Seeking Generative Adversarial Networks for Diverse Image Synthesis<br>
 [Qi Mao](https://sites.google.com/view/qi-mao/)\*, [Hsin-Ying Lee](http://vllab.ucmerced.edu/hylee/)\*, [Hung-Yu Tseng](https://sites.google.com/site/hytseng0509/)\*, [Siwei Ma](https://scholar.google.com/citations?user=y3YqlaUAAAAJ&hl=zh-CN), and [Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/)<br>
 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019 (* equal contribution)
 
-Please cite our paper if you find the code useful for your research.
+## Citing MSGAN
+If you find MSGAN useful in your research, please consider citing:
 ```
 @inproceedings{MSGAN,
   author = {Mao, Qi, Lee, Hsin-Ying and Tseng, Hung-Yu and Ma, Siwei, and Yang, Ming-Hsuan},
@@ -47,7 +48,7 @@ python train.py
 
 You can download the facades and maps datasets from the BicycleGAN [[Github Project]](https://github.com/junyanz/BicycleGAN) into folder
 ```
-./datasets
+./datasets/
 ```
 We employ the generator and discriminator architectures of the BicycleGAN and follow the training process of Pix2Pix.
 ```
@@ -62,3 +63,30 @@ You can download the datasets from the DRIT [[Github Project]](https://github.co
 cd MSGAN/DRIT-Mode-Seeking
 python train.py --dataroot=./datasets/cat2dog
 ```
+### Conditioned on Text
+- Dataset: CUB-200-2011
+- Baseline: StackGAN++ <br>
+
+You can download the datasets from the StackGAN++ [[Github Project]](https://github.com/hanzhanggit/StackGAN-v2)
+```
+cd MSGAN/StackGAN++-Mode-Seeking
+python main.py --cfg cfg/birds_3stages.yml
+```
+### Pre-trained Models
+- DCGAN-Mode-Seeking 
+- Pix2Pix-Mode-Seeking for facades and maps
+- DRIT-Mode-Seeking for Yosemite and Cat2dog
+- StackGAN++-Mode-Seeking
+
+Download and save it to 
+```
+./models/
+```
+
+### Evaluation
+Following the instructions of baseline frameworks for evaluation.
+
+### Reference
+- Pix2Pix and BicycleGAN [[Github Project]](https://github.com/junyanz/BicycleGAN) 
+- DRIT [[Github Project]](https://github.com/HsinYingLee/DRIT)
+- StackGAN++ [[Github Project]](https://github.com/hanzhanggit/StackGAN-v2)
