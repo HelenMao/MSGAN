@@ -87,6 +87,7 @@ Download and save them into
 
 ## Evaluation
 For [Pix2Pix](https://github.com/junyanz/BicycleGAN), [DRIT](https://github.com/HsinYingLee/DRIT), [StackGAN++](https://github.com/hanzhanggit/StackGAN-v2), please follow the instructions of corresponding github projects of the baseline frameworks for evaluation details. <br>
+### Testing Examples
 **DCGAN-Mode-Seeking** <br>
 ```
 python test.py --dataroot ./datasets/Cifar10 --resume ./models/DCGAN-Mode-Seeking/00199.pth
