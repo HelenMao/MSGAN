@@ -75,8 +75,8 @@ cd MSGAN/StackGAN++-Mode-Seeking
 python main.py --cfg cfg/birds_3stages.yml
 ```
 ## Pre-trained Models
-- DCGAN-Mode-Seeking 
-- Pix2Pix-Mode-Seeking for facades and maps
+- [DCGAN-Mode-Seeking](https://drive.google.com/open?id=1eWq1nD-zJVEerru-_X5Ztpb8YbcYo7Px) 
+- [Pix2Pix-Mode-Seeking for facades and maps]
 - DRIT-Mode-Seeking for Yosemite and Cat2dog
 - StackGAN++-Mode-Seeking
 
@@ -86,7 +86,7 @@ Download and save them into
 ```
 
 ## Evaluation
-Following the instructions of baseline frameworks for evaluation.
+For [Pix2Pix](https://github.com/junyanz/BicycleGAN), [DRIT](https://github.com/HsinYingLee/DRIT), [StackGAN++](https://github.com/hanzhanggit/StackGAN-v2), please follow the instructions of corresponding github projects of the baseline frameworks for evaluation details.
 **DCGAN-Mode-Seeking** <br>
 ```
 python test.py --dataroot ./datasets/Cifar10 --resume ./models/DCGAN-Mode-Seeking/00199.pth
