@@ -15,7 +15,7 @@ IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019 (* equal
 If you find MSGAN useful in your research, please consider citing:
 ```
 @inproceedings{MSGAN,
-  author = {Mao, Qi, Lee, Hsin-Ying and Tseng, Hung-Yu and Ma, Siwei, and Yang, Ming-Hsuan},
+  author = {Mao, Qi, and Lee, Hsin-Ying and Tseng, Hung-Yu and Ma, Siwei, and Yang, Ming-Hsuan},
   booktitle = {IEEE Conference on Computer Vision and Pattern Recognition},
   title = {Mode Seeking Generative Adversarial Networks for Diverse Image Synthesis},
   year = {2019}
