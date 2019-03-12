@@ -1,6 +1,5 @@
 
 <img src='imgs/teaser.png', width="800px">
-
 # Mode Seeking Generative Adversarial Networks for Diverse Image Synthesis
 
 Pytorch implementation for our MSGAN (**Miss-GAN**). We propose a simple yet effective mode seeking regularization term that can be applied to **arbitrary** conditional generative adversarial networks in different tasks to alleviate the mode collapse issue and improve the **diversity**.
@@ -16,7 +15,7 @@ IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019 (* equal
 If you find MSGAN useful in your research, please consider citing:
 ```
 @inproceedings{MSGAN,
-  author = {Mao, Qi and Lee, Hsin-Ying and Tseng, Hung-Yu and Ma, Siwei and Yang, Ming-Hsuan},
+  author = {Mao, Qi, and Lee, Hsin-Ying and Tseng, Hung-Yu and Ma, Siwei, and Yang, Ming-Hsuan},
   booktitle = {IEEE Conference on Computer Vision and Pattern Recognition},
   title = {Mode Seeking Generative Adversarial Networks for Diverse Image Synthesis},
   year = {2019}
@@ -45,7 +44,7 @@ mkdir datasets
 - Baseline: DCGAN
 ```
 cd MSGAN/DCGAN-Mode-Seeking
-python train.py --dataroot=./datasets/CIFAR10
+python train.py --dataroot ./datasets/Cifar10
 ```
 ### Conditioned on Image
 - Paired Data: facades and maps
@@ -55,7 +54,7 @@ You can download the facades and maps datasets from the BicycleGAN [[Github Proj
 We employ the generator and discriminator architectures of the BicycleGAN and follow the training process of Pix2Pix.
 ```
 cd MSGAN/Pix2Pix-Mode-Seeking
-python train.py --dataroot=./datasets/facades
+python train.py --dataroot ./datasets/facades
 ```
 - Unpaired Data: Yosemite (summer <-> winter) and Cat2Dog (cat <-> dog)
 - Baseline: DRIT <br>
@@ -63,7 +62,7 @@ python train.py --dataroot=./datasets/facades
 You can download the datasets from the DRIT [[Github Project]](https://github.com/HsinYingLee/DRIT)
 ```
 cd MSGAN/DRIT-Mode-Seeking
-python train.py --dataroot=./datasets/cat2dog
+python train.py --dataroot ./datasets/cat2dog
 ```
 ### Conditioned on Text
 - Dataset: CUB-200-2011
@@ -80,15 +79,21 @@ python main.py --cfg cfg/birds_3stages.yml
 - DRIT-Mode-Seeking for Yosemite and Cat2dog
 - StackGAN++-Mode-Seeking
 
-Download and save it to 
+Download and save them into 
 ```
 ./models/
 ```
 
 ## Evaluation
 Following the instructions of baseline frameworks for evaluation.
+**DCGAN-Mode-Seeking** <br>
+```
+python test.py --dataroot ./datasets/Cifar10 --resume ./models/DCGAN-Mode-Seeking/00199.pth
+```
+
 
 ## Reference
+- DCGAN [[Paper]](https://arxiv.org/abs/1511.06434)
 - Pix2Pix and BicycleGAN [[Github Project]](https://github.com/junyanz/BicycleGAN) 
 - DRIT [[Github Project]](https://github.com/HsinYingLee/DRIT)
 - StackGAN++ [[Github Project]](https://github.com/hanzhanggit/StackGAN-v2)
