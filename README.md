@@ -1,3 +1,4 @@
+
 <img src='imgs/teaser.png', width="800px">
 # Mode Seeking Generative Adversarial Networks for Diverse Image Synthesis
 
