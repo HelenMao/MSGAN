@@ -10,8 +10,9 @@ Contact: Qi Mao (qimao@pku.edu.cn), Hsin-Ying Lee (hlee246@ucmerced.edu), and Hu
 ## Paper
 Mode Seeking Generative Adversarial Networks for Diverse Image Synthesis<br>
 [Qi Mao](https://sites.google.com/view/qi-mao/)\*, [Hsin-Ying Lee](http://vllab.ucmerced.edu/hylee/)\*, [Hung-Yu Tseng](https://sites.google.com/site/hytseng0509/)\*, [Siwei Ma](https://scholar.google.com/citations?user=y3YqlaUAAAAJ&hl=zh-CN), and [Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/)<br>
-IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019 (* equal contribution)
-[arxiv]()
+IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019 (* equal contribution)<br>
+
+[[arxiv]]()
 ## Citing MSGAN
 If you find MSGAN useful in your research, please consider citing:
 ```
