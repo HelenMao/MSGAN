@@ -1,5 +1,5 @@
 
-<img src='imgs/teaser.png' width="900px">
+<img src='imgs/teaser.pdf' width="900px">
 
 # Mode Seeking Generative Adversarial Networks for Diverse Image Synthesis
 
@@ -24,7 +24,7 @@ If you find MSGAN useful in your research, please consider citing:
 }
 ```
 ## Example Results
-<img src='imgs/DRIT.png' width="900px">
+<img src='imgs/DRIT.pdf' width="900px">
 
 ## Usage
 
