@@ -55,8 +55,8 @@ python train.py --dataroot ./datasets/Cifar10
 - Paired Data: facades and maps
 - Baseline: Pix2Pix <br>
 
-You can download the facades and maps datasets from the BicycleGAN [[Github Project]](https://github.com/junyanz/BicycleGAN) <br>
-We employ the generator and discriminator architectures of the BicycleGAN and follow the training process of Pix2Pix.
+You can download the facades and maps datasets from the BicycleGAN [[Github Project]](https://github.com/junyanz/BicycleGAN). <br>
+We employ the network architecture of the BicycleGAN and follow the training process of Pix2Pix.
 ```
 cd MSGAN/Pix2Pix-Mode-Seeking
 python train.py --dataroot ./datasets/facades
@@ -64,7 +64,8 @@ python train.py --dataroot ./datasets/facades
 - Unpaired Data: Yosemite (summer <-> winter) and Cat2Dog (cat <-> dog)
 - Baseline: DRIT <br>
 
-You can download the datasets from the DRIT [[Github Project]](https://github.com/HsinYingLee/DRIT)
+You can download the datasets from the DRIT [[Github Project]](https://github.com/HsinYingLee/DRIT). <br>
+Specify `--concat 0` for Cat2Dog to handle large shape variation translation
 ```
 cd MSGAN/DRIT-Mode-Seeking
 python train.py --dataroot ./datasets/cat2dog
@@ -73,7 +74,7 @@ python train.py --dataroot ./datasets/cat2dog
 - Dataset: CUB-200-2011
 - Baseline: StackGAN++ <br>
 
-You can download the datasets from the StackGAN++ [[Github Project]](https://github.com/hanzhanggit/StackGAN-v2)
+You can download the datasets from the StackGAN++ [[Github Project]](https://github.com/hanzhanggit/StackGAN-v2).
 ```
 cd MSGAN/StackGAN++-Mode-Seeking
 python main.py --cfg cfg/birds_3stages.yml
