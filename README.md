@@ -122,6 +122,6 @@ python main.py --cfg cfg/eval_birds.yml
 - StackGAN++ [[Github Project]](https://github.com/hanzhanggit/StackGAN-v2)
 
 ## Quantitative Evaluation Metrics
--FID[[Github Project]](https://github.com/bioinf-jku/TTUR)
--LPIPS[[Github Project]](https://github.com/richzhang/PerceptualSimilarity)
--NDBand JSD[[Github Project]](https://github.com/eitanrich/gans-n-gmms)
+- FID[[Github Project]](https://github.com/bioinf-jku/TTUR)
+- LPIPS[[Github Project]](https://github.com/richzhang/PerceptualSimilarity)
+- NDBand JSD[[Github Project]](https://github.com/eitanrich/gans-n-gmms)
