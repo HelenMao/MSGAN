@@ -39,7 +39,7 @@ def main():
 
     # train
     print('\n--- train ---')
-    max_it = 500000
+
     for ep in range(ep0, opts.n_ep):
         for it, (images, label) in enumerate(train_loader):
             if images.size(0) != opts.batch_size:
@@ -56,11 +56,8 @@ def main():
 
             print('total_it: %d (ep %d, it %d), lr %08f' % (total_it, ep, it, model.gen_opt.param_groups[0]['lr']))
             total_it += 1
-            if total_it >= max_it:
-                saver.write_img(-1, model)
-                saver.write_model(-1, max_it, model)
-                break
 
+    
         # save result image
         saver.write_img(ep, model)
         # Save network weights
