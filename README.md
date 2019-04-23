@@ -11,7 +11,7 @@ Contact: Qi Mao (qimao@pku.edu.cn), Hsin-Ying Lee (hlee246@ucmerced.edu), and Hu
 Mode Seeking Generative Adversarial Networks for Diverse Image Synthesis<br>
 [Qi Mao](https://sites.google.com/view/qi-mao/)\*, [Hsin-Ying Lee](http://vllab.ucmerced.edu/hylee/)\*, [Hung-Yu Tseng](https://sites.google.com/site/hytseng0509/)\*, [Siwei Ma](https://scholar.google.com/citations?user=y3YqlaUAAAAJ&hl=zh-CN), and [Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/)<br>
 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019 (* equal contribution)<br>
-[[arxiv]](https://arxiv.org/pdf/1903.05628.pdf)
+[[arxiv]](https://arxiv.org/abs/1903.05628)
 ## Citing MSGAN
 If you find MSGAN useful in your research, please consider citing:
 ```
@@ -120,3 +120,8 @@ python main.py --cfg cfg/eval_birds.yml
 - Pix2Pix and BicycleGAN [[Github Project]](https://github.com/junyanz/BicycleGAN) 
 - DRIT [[Github Project]](https://github.com/HsinYingLee/DRIT)
 - StackGAN++ [[Github Project]](https://github.com/hanzhanggit/StackGAN-v2)
+
+## Quantitative Evaluation Metrics
+- FID [[Github Project]](https://github.com/bioinf-jku/TTUR)
+- LPIPS [[Github Project]](https://github.com/richzhang/PerceptualSimilarity)
+- NDB and JSD [[Github Project]](https://github.com/eitanrich/gans-n-gmms)
