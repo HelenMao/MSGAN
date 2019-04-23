@@ -59,7 +59,7 @@ def main():
       total_it += 1
       if total_it >= max_it:
         saver.write_img(-1, model)
-        saver.write_model(-1, model)
+        saver.write_model(-1, max_it, model)
         break
 
     # decay learning rate
