@@ -57,7 +57,7 @@ def main():
             print('total_it: %d (ep %d, it %d), lr %08f' % (total_it, ep, it, model.gen_opt.param_groups[0]['lr']))
             total_it += 1
 
-    
+
         # save result image
         saver.write_img(ep, model)
         # Save network weights
